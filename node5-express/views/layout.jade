@@ -1,7 +1,16 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+	head
+	title= title
+	link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		h1 lets start
+		ul
+			li.list-item one
+			li two
+			li three
+		input(type="text")
+		- var isSeen = false
+		if isSeen
+			p i can see you
+		block content
